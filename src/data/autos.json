@@ -1,0 +1,167 @@
+[
+  {
+    "nombre": "Porsche 911 Carrera",
+    "imagen": "/imagenes/911carrera.avif",
+    "detalles": [
+      {
+        "categoria": "Prestaciones",
+        "items": [
+          {"aceleracion_0_100_kmh": "4.2s"},
+          {"velocidad_maxima": "293 km/h"},
+          {"potencia_total": "385 HP"}
+        ]
+      },
+      {
+        "categoria": "Motor y Transmisión",
+        "items": [
+          {"tipo_motor": "6 cilindros bóxer biturbo"},
+          {"cilindrada": "2,981 cm³"},
+          {"transmision": "PDK de 8 velocidades"},
+          {"par_maximo": "450 Nm"}
+        ]
+      },
+      {
+        "categoria": "Dimensiones y Peso",
+        "items": [
+          {"longitud": "4,519 mm"},
+          {"anchura_con_espejos": "2,024 mm"},
+          {"peso_en_vacio": "1,505 kg"}
+        ]
+      },
+      {
+        "categoria": "Descripción",
+        "items": [
+          {"texto": "El Porsche 911 Carrera es el corazón de la gama 911, equilibrando el rendimiento purista con la usabilidad."}
+        ]
+      }
+    ]
+  },
+  {
+    "nombre": "Ferrari SF90 Stradale",
+    "imagen": "/imagenes/FerrariSF90.avif",
+    "detalles": [
+      {
+        "categoria": "Prestaciones",
+        "items": [
+          {"aceleracion_0_100_kmh": "2.5s"},
+          {"velocidad_maxima": "340 km/h"},
+          {"potencia_total": "986 HP"}
+        ]
+      },
+      {
+        "categoria": "Motor y Transmisión",
+        "items": [
+          {"tipo_motor": "V8 biturbo + 3 motores eléctricos"},
+          {"cilindrada": "3,990 cm³"},
+          {"transmision": "8-Speed Dual-Clutch F1 Gearbox"},
+          {"par_maximo": "800 Nm"}
+        ]
+      },
+      {
+        "categoria": "Dimensiones y Peso",
+        "items": [
+          {"longitud": "4,710 mm"},
+          {"anchura": "1,972 mm"},
+          {"altura": "1,186 mm"},
+          {"peso_en_seco": "1,570 kg"}
+        ]
+      },
+      {
+        "categoria": "Descripción",
+        "items": [
+          {"texto": "El Ferrari SF90 Stradale es un superdeportivo híbrido enchufable con tracción integral, uno de los más potentes de Ferrari."}
+        ]
+      }
+    ]
+  },
+  {
+    "nombre": "Lamborghini Revuelto",
+    "imagen": "/imagenes/Lamborghini-revuelto.png",
+    "detalles": [
+      {
+        "categoria": "Prestaciones",
+        "items": [
+          {"aceleracion_0_100_kmh": "2.5s"},
+          {"velocidad_maxima": ">350 km/h"},
+          {"potencia_total": "1001 HP"}
+        ]
+      },
+      {
+        "categoria": "Motor y Transmisión",
+        "items": [
+          {"tipo_motor": "V12 NA 6.5L + 3 motores eléctricos"},
+          {"cilindrada": "6,498.5 cm³"},
+          {"transmision": "Automática DCT de 8 velocidades"},
+          {"par_maximo": "725 Nm (ICE)"}
+        ]
+      },
+      {
+        "categoria": "Dimensiones y Peso",
+        "items": [
+          {"longitud": "4,947 mm"},
+          {"anchura": "2,266 mm"},
+          {"altura": "1,160 mm"},
+          {"peso_en_vacio": "1,772 kg"}
+        ]
+      },
+      {
+        "categoria": "Descripción",
+        "items": [
+          {"texto": "El Lamborghini Revuelto combina un motor V12 atmosférico de 6.5 litros con tres motores eléctricos en un híbrido de alto rendimiento."}
+        ]
+      }
+    ]
+  },
+  {
+    "nombre": "Xiaomi SU7",
+    "imagen": "/imagenes/Xiaomi-Su7.png",
+    "detalles": [
+      {
+        "categoria": "Prestaciones",
+        "items": [
+          {"aceleracion_0_100_kmh_base": "5.28 s"},
+          {"aceleracion_0_100_kmh_max": "2.78 s"},
+          {"velocidad_maxima_base": "210 km/h"},
+          {"velocidad_maxima_max": "265 km/h"},
+          {"potencia_total": "673 HP (495 kW)"}
+        ]
+      },
+      {
+        "categoria": "Motor y Transmisión",
+        "items": [
+          {"base_motor": "Motor eléctrico único HyperEngine – 220 kW"},
+          {"max_motor": "Doble motor eléctrico"},
+          {"max_par_maximo": "838 Nm"},
+          {"transmision": "Transmisión eléctrica de una velocidad"}
+        ]
+      },
+      {
+        "categoria": "Batería y Rango",
+        "items": [
+          {"opciones_bateria_kwh": [73.6, 94.3, 101]},
+          {"rango_CLTC_km_base": 700},
+          {"rango_CLTC_km_pro": 830},
+          {"rango_CLTC_km_max": 800},
+          {"tecnologia": "CATL NMC / LFP"},
+          {"rapida_carga": "Compatible con carga rápida de alta potencia"}
+        ]
+      },
+      {
+        "categoria": "Dimensiones y Peso",
+        "items": [
+          {"longitud": "4997 mm"},
+          {"anchura": "1963 mm"},
+          {"altura": "1440–1455 mm"},
+          {"distancia_ejes": "3000 mm"},
+          {"peso_en_vacio_kg": "1980–2205"}
+        ]
+      },
+      {
+        "categoria": "Descripción",
+        "items": [
+          {"texto": "El Xiaomi SU7 es el primer vehículo eléctrico de producción de Xiaomi, un sedán de alta eficiencia con variantes de tracción trasera y tracción total con gran autonomía y aceleración destacada."}
+        ]
+      }
+    ]
+  }
+]

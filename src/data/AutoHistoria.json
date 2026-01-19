@@ -1,0 +1,44 @@
+{
+  "AutoHistoria": [
+    {
+      "year": 1769,
+      "titulo": "El Origen",
+      "nombre": "Cugnot’s Steam Wagon",
+      "descripcion": "Nicolas-Joseph Cugnot construye el primer vehículo autopropulsado a vapor diseñado para transportar piezas de artillería.",
+      "categoria": "Vapor",
+      "imagen": "/imagenes/cugnot-steam-wagon.jpg"
+    },
+    {
+      "year": 1886,
+      "titulo": "Nacimiento del Motor",
+      "nombre": "Benz Patent-Motorwagen",
+      "descripcion": "Karl Benz patenta el primer automóvil con motor de combustión interna, marcando el inicio de la era moderna del transporte.",
+      "categoria": "Combustión interna",
+      "imagen": "/imagenes/benz-patent-motorwagen.jpg"
+    },
+    {
+      "year": 1950,
+      "titulo": "La Era Dorada",
+      "nombre": "Estilo y Cromo",
+      "descripcion": "El auto se convirtió en un símbolo de estatus y libertad personal. Diseños inspirados en la aviación, grandes aletas traseras y motores V8 dominan el mercado estadounidense.",
+      "categoria": "Diseño y cultura",
+      "imagen": "/imagenes/era-dorada-autos.jpg"
+    },
+    {
+      "year": 1969,
+      "titulo": "Muscle Cars",
+      "nombre": "Poder Americano",
+      "descripcion": "La búsqueda de la potencia bruta lleva a la creación de leyendas como el Mustang, Camaro y Charger.",
+      "categoria": "Alto rendimiento",
+      "imagen": "/imagenes/muscle-cars-1969.jpg"
+    },
+    {
+      "year": 2012,
+      "titulo": "Sostenibilidad",
+      "nombre": "Revolución Eléctrica",
+      "descripcion": "El Tesla Model S demuestra que los autos eléctricos pueden ser deseables, rápidos y de largo alcance.",
+      "categoria": "Energía eléctrica",
+      "imagen": "/imagenes/tesla-model-s.jpg"
+    }
+  ]
+}

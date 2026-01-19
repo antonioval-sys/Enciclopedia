@@ -1,0 +1,728 @@
+* {
+  margin: 0px;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+      /* Estilo para home*/
+/* Estilos para la sección de encabezado */
+.header-section{
+    height: 1500px;
+  text-align: center;
+  display: grid;
+    grid-template-rows: 1fr 1fr;
+    font-size: 147px;
+    align-items: center;
+   background-image: 
+    radial-gradient(circle at center, rgba(168, 208, 255, 0.5) 0%, rgba(58, 110, 165, 0.7) 40%, rgba(11, 28, 58, 0.8) 100%), 
+    url('/imagenes/fondo1.png'); /* imagen de fondo con color sobrepuesto radial */
+         background-size: 100% 100%;
+    background-repeat: no-repeat; /* evita que se repita */
+    background-position: top;     /* asegura que se alinee al inicio vertical */
+     color: #F5F5F5;
+     padding-bottom: 200px;
+}
+
+.header-section p{
+   font-family: "Georgia", serif;
+font-size: 85px;
+}
+/* Estilos para la sección de tarjetas auto*/
+.cards-container{
+display: grid;
+justify-content: center;
+grid-template-columns: repeat(2, 1fr);
+justify-items: center;
+background: radial-gradient(circle at center, #d9e2ec 0%, #9bb0c7 50%, #6b7c99 100%); /* fondo azul radial */
+height: 1000px;
+padding-top: 120px;
+  padding-bottom:120px;
+}
+
+.cont-card{
+    padding-top: 20px;
+    justify-items: center;
+    width: 600px;
+    height: auto;
+    gap: 5px;
+}
+
+.cont-card p{
+    color: #000000;
+}
+.img-card {
+  width: 100%;
+  height: 180px;         
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+
+.img-card img {
+  width: 515px;
+  height: 140px;
+  filter: brightness(0.9) contrast(1.2) saturate(1.2); /* mejora la calidad visual */
+  transform: scale(1.25); /* escala la imagen para un mejor encuadre */
+ object-fit: cover; /* asegura que la imagen cubra el contenedor */
+  object-position: center; /* centra la imagen dentro del contenedor */
+  aspect-ratio: 16 / 9; /* mantiene una proporción adecuada */
+}
+
+/* Estilos para la barra de navegación */
+.navbar {
+  margin: 0;
+  display: flex;
+ justify-content: space-between; /* distribuye elementos con espacio entre ellos */
+  align-items: center;            /* centra verticalmente */
+  padding: 15px 30px;
+ background: radial-gradient(circle, #000000, #0f0f0f);        /* fondo oscuro elegante */
+  color: #f5f5f5;
+  font-family: "Georgia", serif;
+}
+
+.navbar .logo {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.navbar .nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;                     /* espacio entre los links */
+  margin: 0;
+  padding: 0;
+}
+
+.navbar .nav-links li a {
+  color: #f5f5f5;
+  text-decoration: none;
+  font-size: 20px;
+  transition: color 0.3s;
+}
+
+.navbar .nav-links li a:hover {
+  color: #ff9900;                /* efecto hover elegante */
+}
+ /* Botón de menú para dispositivos móviles */
+.menu-btn {
+  display: none;
+  background: none;
+  border: none;
+  color: #f5f5f5;
+  font-size: 28px;
+  cursor: pointer;
+}
+.nav-links {
+  transition: all 0.3s ease;
+}
+
+/* Estilos para el footer */
+
+.footer {
+  margin: 0;
+  display: flex;                  /* activa Flexbox */
+  justify-content: space-between; /* distribuye elementos con espacio entre ellos */
+  align-items: center;            /* centra verticalmente */
+  padding: 20px;
+background: radial-gradient(circle, #000000, #0f0f0f);        /* fondo oscuro elegante */
+  color: #f5f5f5;
+   font-family: "Georgia", serif;
+}
+
+.footer p {
+   
+  margin: 5px 0;
+}
+
+/* Estilos para pagina historia */
+
+.section-historia{
+justify-items: center;
+  margin: 0;
+padding: auto;
+  position: relative; /* referencia para absolute */
+   background: radial-gradient(circle at center, #d9e2ec 0%, #9bb0c7 50%, #6b7c99 100%);
+}
+
+.header-historia{
+  justify-items: left;
+  font-size: 40px;
+  padding-top: 80px;
+   font-family: "Georgia", serif;
+   color: #000000;
+   text-align: left;
+}
+.historia-container {
+  position: relative;
+}
+
+.timeline-line {
+  position: absolute;
+  left: 410px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  opacity: 0.2;
+
+  background: repeating-linear-gradient(
+    to bottom,
+    #fff 0px,
+    #fff 12px,
+    transparent 12px,
+    transparent 24px
+  );
+}
+
+.historia-card {
+  position: relative;
+   padding-bottom: 3rem; /* mb-12 */
+}
+
+.year {
+  position: absolute;
+  left: 1rem; /* left-4 */
+  top: 0;
+
+  width: 2.5rem;  /* w-8 */
+  height: 2.5rem; /* h-8 */
+
+  border-radius: 50%;
+  background-color: #1e40af;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  z-index: 10;
+  border: 4px solid v;
+}
+
+.year-text {
+  font-size: 15px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.historia-content {
+padding-top: 15px;
+padding-left: 5px;
+  margin-left: 3.7rem; /* ml-14 */
+}
+
+.historia-desc-span {
+  font-size: 0.75rem; /* text-xs */
+  font-weight: bold;
+  color: #1e40af; /* text-blue-800 */
+  text-transform: uppercase;
+  letter-spacing: 0.15em; /* tracking-widest */
+}
+
+.historia-title {
+  font-size: 1.5rem; /* text-2xl */
+  font-weight: bold;
+  margin-top: 0.25rem;
+  margin-bottom: 0.75rem;
+}
+
+.historia-image {
+  border-radius: 0.75rem; /* rounded-xl */
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+  background: #e5e7eb;
+   padding-bottom: 0.75rem;
+  height: 650px;
+}
+
+.historia-img {
+  width: 100%;
+  height: 550px;
+  object-fit: cover;
+  opacity: 0.8;
+  mix-blend-mode: overlay;
+}
+
+.historia-description {
+  margin-top: -5px;
+  height: 100px;
+  padding: 1rem;
+  background: #fff;
+}
+
+.historia-text {
+  font-size: 0.9rem; /* text-base */
+  line-height: 1.9; /* leading-relaxed */
+  color: #475569;
+}
+
+/*Caracteristicas auto*/
+.cards-container a {
+  text-decoration: none;   /* quita el subrayado */
+  color: inherit;          /* usa el color del h2 */
+}
+
+.cards-container  a:visited,
+.cards-container a:hover,
+.cards-container a:active {
+  color: inherit;          /* evita colores morado/azul */
+}
+
+/* Contenedor principal */
+.cont-carac {
+  justify-items: center;
+  margin: 0 auto;
+  padding: 1.5rem;
+  background: radial-gradient(circle at center, #d9e2ec 0%, #9bb0c7 50%, #6b7c99 100%);
+}
+
+/* Imagen */
+.img-carac {
+  object-position: center;
+}
+
+.img-carac img {
+  margin-top: 20px;
+    width: 515px;
+    height: 140px;
+    filter: brightness(0.9) contrast(1.2) saturate(1.2);
+    transform: scale(1.25);
+    object-fit: cover;
+    object-position: center;
+    aspect-ratio: 16 / 9;
+}
+
+/* Nombre del auto */
+.cont-carac h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: #0f172a;
+}
+
+/* Categoría */
+.detalle-categoria {
+   width: 100%;
+  max-width: 730px;
+  box-sizing: border-box;
+  margin-bottom: 1.8rem;
+  padding: 1.2rem;
+  background: #ffffff;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Título de categoría */
+.detalle-categoria h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #1e40af;
+}
+
+/* Lista */
+.detalle-categoria ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Items */
+.detalle-categoria li {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  padding: 0.4rem 0;
+  color: #334155;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.detalle-categoria li:last-child {
+  border-bottom: none;
+}
+
+/* Texto en negrita */
+.detalle-categoria strong {
+  color: #0f172a;
+}
+
+
+
+
+/* fondo azul radial
+  background-image: radial-gradient(circle at center, #d9e2ec 0%, #9bb0c7 50%, #6b7c99 100%);
+*/
+/*fondo crema radial
+ background: radial-gradient(circle at center, #fffaf0 0%, #fff5e6 50%, #f0e0c8 100%); */
+
+
+ /* Adapacion para dispositivos moviles */
+
+/* 📱 Tablets o celular de pantalla grande*/
+@media (max-width: 1024px) {
+
+  .header-section p {
+    font-size: 60px;
+  }
+
+  .cards-container {
+    grid-template-columns: 1fr; /* una sola columna */
+    height: auto;
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .cont-card {
+    width: 90%;
+  }
+
+  .img-card img {
+    width: 100%;
+    height: auto;
+    transform: scale(1.1);
+  }
+  /* Mostrar botón hamburguesa */
+  .menu-btn {
+    display: block;
+  }
+
+  /* OCULTAR MENÚ POR DEFECTO */
+  .navbar .nav-links {
+     position: fixed;
+    display: none; /* AQUÍ SE ESCONDE */
+    top: 68px;
+    left: 0;
+    width: 100%;
+    background: radial-gradient(circle, #000000, #0f0f0f);
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 30px 0;
+    z-index: 9999;
+  }
+
+  /* MOSTRAR CUANDO ESTÁ ABIERTO */
+  .navbar .nav-links.open {
+    display: flex;
+  }
+
+  .navbar {
+    position: relative;
+  }
+  /* Estilos para pagina historia */
+.timeline-line {
+  position: absolute;
+  left: 15px;
+ }
+
+  .historia-content {
+  margin-left: 2rem; 
+  margin-right:  1rem;
+}
+  .historia-image {
+  border-radius: 0.75rem; /* rounded-xl */
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+  background: #e5e7eb;
+  height: 450px;
+  width: 350px;
+}
+
+.historia-img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  opacity: 0.8;
+  mix-blend-mode: overlay;
+}
+
+.historia-description {
+  margin-top: -5px;
+  height: 100px;
+  padding: 1rem;
+  background: #fff;
+}
+
+.historia-text {
+   margin-left: 10px;
+  font-size: 0.7rem; /* text-base */
+  line-height: 1.9; /* leading-relaxed */
+  color: #475569;
+}
+
+.year-text {
+  font-size: 15px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.historia-content {
+padding-top: 20px;
+padding-left: 5px;
+  margin-left: 2rem; 
+}
+.historia-title{
+  margin-left: 20px;
+}
+/* Ajustes para contenedor de características de autos */
+.img-carac img {
+ 
+    width: 250px;
+    height: 70px;
+    filter: brightness(0.9) contrast(1.2) saturate(1.2);
+      transform: scale(1.1);
+}
+}
+
+ /* 📱 Celulares medianos */
+@media (max-width: 768px) {
+
+  .header-section {
+    height: 100vh;
+    font-size: 42px;
+  }
+
+  .header-section p {
+    font-size: 38px;
+    padding: 0 15px;
+  }
+
+
+
+  /* TARJETAS */
+  .cards-container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .cont-card {
+    width: 400px;
+
+  }
+
+  .img-card img{
+  width: 350px;
+  height: 100px;
+  }
+
+  /* HISTORIA */
+  .header-historia {
+    font-size: 20px;
+    padding-top: 50px;
+  }
+   /* Mostrar botón hamburguesa */
+  .menu-btn {
+    display: block;
+  }
+
+  /* OCULTAR MENÚ POR DEFECTO */
+  .navbar .nav-links {
+    display: none; /* AQUÍ SE ESCONDE */
+    position: fixed;
+    z-index: 9999;
+    top: 68px;
+    left: 0;
+    width: 100%;
+    background: radial-gradient(circle, #000000, #0f0f0f);
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 30px 0;
+  }
+
+  /* MOSTRAR CUANDO ESTÁ ABIERTO */
+  .navbar .nav-links.open {
+    display: flex;
+  }
+
+  .navbar {
+    position: relative;
+  }
+
+/* Estilos para pagina historia */
+.timeline-line {
+  position: absolute;
+  left: 15px;
+ }
+
+  .historia-content {
+  margin-left: 2rem; 
+  margin-right:  1rem;
+}
+  .historia-image {
+  border-radius: 0.75rem; /* rounded-xl */
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+  background: #e5e7eb;
+  height: 450px;
+  width: 350px;
+}
+
+.historia-img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  opacity: 0.8;
+  mix-blend-mode: overlay;
+}
+
+.historia-description {
+  margin-top: -5px;
+  height: 100px;
+  padding: 1rem;
+  background: #fff;
+}
+
+.historia-text {
+   margin-left: 10px;
+  font-size: 0.7rem; /* text-base */
+  line-height: 1.9; /* leading-relaxed */
+  color: #475569;
+}
+
+.year-text {
+  font-size: 15px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.historia-content {
+padding-top: 20px;
+padding-left: 5px;
+  margin-left: 2rem; 
+}
+.historia-title{
+  margin-left: 20px;
+}
+
+/* Ajustes para contenedor de características de autos */
+.img-carac img {
+ 
+    width: 250px;
+    height: 70px;
+    filter: brightness(0.9) contrast(1.2) saturate(1.2);
+      transform: scale(1.1);
+}
+}
+
+/* 📱 Celulares pequeños */
+@media (max-width: 480px) {
+
+  .header-section p {
+    font-size: 28px;
+  }
+
+  .navbar .logo {
+    font-size: 20px;
+  }
+  
+
+  .navbar .nav-links li a {
+    font-size: 16px;
+  }
+
+  .footer {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+
+  /* Mostrar botón hamburguesa */
+  .menu-btn {
+    display: block;
+  }
+
+  /* OCULTAR MENÚ POR DEFECTO */
+  .navbar .nav-links {
+    display: none; /* AQUÍ SE ESCONDE */
+    position: fixed;
+    z-index: 9999;
+    top: 68px;
+    left: 0;
+    width: 100%;
+    background: radial-gradient(circle, #000000, #0f0f0f);
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 30px 0;
+  }
+
+  /* MOSTRAR CUANDO ESTÁ ABIERTO */
+  .navbar .nav-links.open {
+    display: flex;
+  }
+
+  .navbar {
+    position: relative;
+  }
+  /* Estilos para pagina historia */
+.timeline-line {
+  position: absolute;
+  left: 15px;
+ }
+
+  .historia-content {
+  margin-left: 2rem; 
+  margin-right:  1rem;
+}
+  .historia-image {
+  border-radius: 0.75rem; /* rounded-xl */
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+  background: #e5e7eb;
+  height: 450px;
+  width: 350px;
+}
+
+.historia-img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  opacity: 0.8;
+  mix-blend-mode: overlay;
+}
+
+.historia-description {
+  margin-top: -5px;
+  height: 100px;
+  padding: 1rem;
+  background: #fff;
+}
+
+.historia-text {
+   margin-left: 10px;
+  font-size: 0.7rem; /* text-base */
+  line-height: 1.9; /* leading-relaxed */
+  color: #475569;
+}
+
+.year-text {
+  font-size: 15px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.historia-content {
+padding-top: 20px;
+padding-left: 5px;
+  margin-left: 2rem; 
+}
+.historia-title{
+  margin-left: 20px;
+}
+
+/* Ajustes para contenedor de características de autos */
+.img-carac img {
+ 
+    width: 250px;
+    height: 70px;
+    filter: brightness(0.9) contrast(1.2) saturate(1.2);
+      transform: scale(1.1);
+}
+}
+
+
+
