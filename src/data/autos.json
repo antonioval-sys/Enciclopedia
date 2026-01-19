@@ -1,7 +1,7 @@
 [
   {
     "nombre": "Porsche 911 Carrera",
-    "imagen": "/imagenes/911carrera.avif",
+    "imagen": "imagenes/911carrera.avif",
     "detalles": [
       {
         "categoria": "Prestaciones",
@@ -38,7 +38,7 @@
   },
   {
     "nombre": "Ferrari SF90 Stradale",
-    "imagen": "/imagenes/FerrariSF90.avif",
+    "imagen": "imagenes/FerrariSF90.avif",
     "detalles": [
       {
         "categoria": "Prestaciones",
@@ -76,7 +76,7 @@
   },
   {
     "nombre": "Lamborghini Revuelto",
-    "imagen": "/imagenes/Lamborghini-revuelto.png",
+    "imagen": "imagenes/Lamborghini-revuelto.png",
     "detalles": [
       {
         "categoria": "Prestaciones",
@@ -114,7 +114,7 @@
   },
   {
     "nombre": "Xiaomi SU7",
-    "imagen": "/imagenes/Xiaomi-Su7.png",
+    "imagen": "imagenes/Xiaomi-Su7.png",
     "detalles": [
       {
         "categoria": "Prestaciones",
